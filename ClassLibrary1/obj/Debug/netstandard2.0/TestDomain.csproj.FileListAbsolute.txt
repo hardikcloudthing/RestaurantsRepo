@@ -1,0 +1,8 @@
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\bin\Debug\netstandard2.0\TestDomain.deps.json
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\bin\Debug\netstandard2.0\TestDomain.dll
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\bin\Debug\netstandard2.0\TestDomain.pdb
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\obj\Debug\netstandard2.0\TestDomain.csprojAssemblyReference.cache
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\obj\Debug\netstandard2.0\TestDomain.AssemblyInfoInputs.cache
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\obj\Debug\netstandard2.0\TestDomain.AssemblyInfo.cs
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\obj\Debug\netstandard2.0\TestDomain.dll
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\obj\Debug\netstandard2.0\TestDomain.pdb

@@ -1,0 +1,13 @@
+C:\Users\HardikMaru\source\repos\TestTable\TestTable\bin\Debug\netstandard2.0\RestaurantData.deps.json
+C:\Users\HardikMaru\source\repos\TestTable\TestTable\bin\Debug\netstandard2.0\RestaurantData.dll
+C:\Users\HardikMaru\source\repos\TestTable\TestTable\bin\Debug\netstandard2.0\RestaurantData.pdb
+C:\Users\HardikMaru\source\repos\TestTable\TestTable\obj\Debug\netstandard2.0\RestaurantData.csprojAssemblyReference.cache
+C:\Users\HardikMaru\source\repos\TestTable\TestTable\obj\Debug\netstandard2.0\RestaurantData.AssemblyInfoInputs.cache
+C:\Users\HardikMaru\source\repos\TestTable\TestTable\obj\Debug\netstandard2.0\RestaurantData.AssemblyInfo.cs
+C:\Users\HardikMaru\source\repos\TestTable\TestTable\obj\Debug\netstandard2.0\RestaurantData.csproj.CopyComplete
+C:\Users\HardikMaru\source\repos\TestTable\TestTable\obj\Debug\netstandard2.0\RestaurantData.dll
+C:\Users\HardikMaru\source\repos\TestTable\TestTable\obj\Debug\netstandard2.0\RestaurantData.pdb
+C:\Users\HardikMaru\source\repos\TestTable\TestTable\bin\Debug\netstandard2.0\RestaurantModel.dll
+C:\Users\HardikMaru\source\repos\TestTable\TestTable\bin\Debug\netstandard2.0\RestaurantModel.pdb
+C:\Users\HardikMaru\source\repos\TestTable\TestTable\bin\Debug\netstandard2.0\appsettings.Development.json
+C:\Users\HardikMaru\source\repos\TestTable\TestTable\bin\Debug\netstandard2.0\appsettings.json

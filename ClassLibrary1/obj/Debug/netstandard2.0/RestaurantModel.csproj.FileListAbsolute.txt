@@ -1,0 +1,8 @@
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\bin\Debug\netstandard2.0\RestaurantModel.deps.json
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\bin\Debug\netstandard2.0\RestaurantModel.dll
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\bin\Debug\netstandard2.0\RestaurantModel.pdb
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\obj\Debug\netstandard2.0\RestaurantModel.AssemblyInfoInputs.cache
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\obj\Debug\netstandard2.0\RestaurantModel.AssemblyInfo.cs
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\obj\Debug\netstandard2.0\RestaurantModel.dll
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\obj\Debug\netstandard2.0\RestaurantModel.pdb
+C:\Users\HardikMaru\source\repos\TestTable\ClassLibrary1\obj\Debug\netstandard2.0\RestaurantModel.csprojAssemblyReference.cache
