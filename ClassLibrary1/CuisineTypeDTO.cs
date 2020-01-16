@@ -6,7 +6,7 @@ namespace RestaurantModel
 {
     public class CuisineTypeDTO
     {
-        //public int Id { get; set; }
+        public int Id { get; set; }
         public string Cuisinename { get; set; }
     }
 }

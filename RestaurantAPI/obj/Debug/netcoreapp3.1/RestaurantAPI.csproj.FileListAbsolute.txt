@@ -53,4 +53,9 @@ C:\Users\HardikMaru\source\repos\TestTable\RestaurantAPI\bin\Debug\netcoreapp3.1
 C:\Users\HardikMaru\source\repos\TestTable\RestaurantAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\HardikMaru\source\repos\TestTable\RestaurantAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\HardikMaru\source\repos\TestTable\RestaurantAPI\bin\Debug\netcoreapp3.1\RestaurantAPI.dll.config
+C:\Users\HardikMaru\source\repos\TestTable\RestaurantAPI\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\HardikMaru\source\repos\TestTable\RestaurantAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\HardikMaru\source\repos\TestTable\RestaurantAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\HardikMaru\source\repos\TestTable\RestaurantAPI\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\HardikMaru\source\repos\TestTable\RestaurantAPI\obj\Debug\netcoreapp3.1\RestaurantAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\HardikMaru\source\repos\TestTable\RestaurantAPI\obj\Debug\netcoreapp3.1\RestaurantAPI.MvcApplicationPartsAssemblyInfo.cache

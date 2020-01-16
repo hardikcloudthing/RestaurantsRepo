@@ -143,6 +143,10 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[1.0.0-rc2-final, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

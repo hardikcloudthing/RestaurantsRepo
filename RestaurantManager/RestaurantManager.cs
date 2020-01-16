@@ -9,19 +9,19 @@ using System.Threading.Tasks;
 
 namespace RestaurantRepo
 {
-    public class RestaurantManager : IRestaurantManager
+    public class RestuarantManager : IRestaurantManager
     {
         private readonly RestaurantContext context;
         
-        public RestaurantManager(RestaurantContext context)
+        public RestuarantManager(RestaurantContext context)
         {
             this.context = context;
         }
-        public Restaurant Add(Restaurant restaurant)
+        public async Task<Restaurant> Add(Restaurant restaurant)
         {
             
-                context.Restaurants.Add(restaurant);
-                context.SaveChanges();
+                await context.Restaurants.AddAsync(restaurant);
+                await context.SaveChangesAsync();
            
             return restaurant;
         }
@@ -39,7 +39,7 @@ namespace RestaurantRepo
         public async Task<int> Delete(int id)
         {
             
-                var restaurant = context.Restaurants.Where(r => r.Id == id).FirstOrDefault();
+                var restaurant = await context.Restaurants.Where(r => r.Id == id).FirstOrDefaultAsync();
                 if (restaurant != null)
                 {
                     context.Restaurants.Remove(restaurant);
@@ -86,8 +86,69 @@ namespace RestaurantRepo
                                             || r.City == searchQuery || r.Country == searchQuery).ToList();
                 }
                 
-                return restaurants.ToList();
+                return restaurants.ToList();            
+        }
+
+
+        public async Task<CuisineType> GetCuisineType(int id)
+        {
+            return await context.Cuisinetypes.Where(c => c.Id == id).FirstOrDefaultAsync();
+        }
+
+        public async Task<List<CuisineType>> GetCuisineTypes()
+        {
+            return await context.Cuisinetypes.ToListAsync();
+        }
+
+        public async Task<List<Rating>> GetRatings(int id)
+        {
+            return await context.Ratings.Where(r => r.RestaurantId == id).ToListAsync();
+        }
+
+        public async Task<Rating> AddRating(int id, Rating rating)
+        {
+            rating.RestaurantId = id;
+            await context.Ratings.AddAsync(rating);
+            await context.SaveChangesAsync();
+            return rating;
+        }
+
+        public async Task<Rating> UpdateRating(int restaurantid, int ratingid, Rating rating)
+        {
+            rating.RestaurantId = restaurantid;
+            rating.Id = ratingid;
+            context.Ratings.Update(rating);
+            await context.SaveChangesAsync();
+            return rating;
+        }
+
+        public async Task<Rating> DeleteRating(int restaurantid,int ratingid)
+        {
+            var rating = await context.Ratings.Where(r => r.RestaurantId == restaurantid && r.Id == ratingid).FirstOrDefaultAsync();
+            //rating.Id = ratingid;
+            context.Ratings.Remove(rating);
+            await context.SaveChangesAsync();
+            return rating;
             
+        }
+
+        public async Task<CuisineType> AddCuisineType(CuisineType newcuisine)
+        {
+            await context.Cuisinetypes.AddAsync(newcuisine);
+            await context.SaveChangesAsync();
+            return newcuisine;
+        }
+
+        public async Task<CuisineType> DeleteCuisineType(int id)
+        {
+            var cuisine = await context.Cuisinetypes.Where(c => c.Id == id).FirstOrDefaultAsync();
+            context.Cuisinetypes.Remove(cuisine);
+            await context.SaveChangesAsync();
+            return cuisine;
+        }
+        ~RestuarantManager()
+        {
+            context.Dispose();
         }
     }
 }

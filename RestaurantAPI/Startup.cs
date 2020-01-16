@@ -32,13 +32,23 @@ namespace RestaurantAPI
             services.AddControllers();
            
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-            services.AddScoped<IRestaurantManager, RestaurantManager>();
+            services.AddScoped<IRestaurantManager, RestuarantManager>();
 
             services.AddDbContext<RestaurantContext>(options =>
+            {               
+                options.UseSqlServer(Configuration.GetConnectionString("RestaurantDBConnection"));               
+            });
+
+            services.AddSwaggerGen(setupAction =>
             {
-                // options.UseSqlServer(Configuration["ConnectionStrings : RestaurantDBConnection"]);
-                options.UseSqlServer(Configuration.GetConnectionString("RestaurantDBConnection"));
-                //options.UseSqlServer("Data Source =.; Initial Catalog = RestaurantDB; Integrated Security = True; Connect Timeout = 30; Encrypt = False; TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False; ");
+            setupAction.SwaggerDoc(
+                    "RestaurantOpenAPISpecification",
+                    new Microsoft.OpenApi.Models.OpenApiInfo()
+                    {
+                        Title = "Restaurant API",
+                        Version = "1"
+                    });
+             
             });
 
         }
@@ -51,6 +61,16 @@ namespace RestaurantAPI
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseHttpsRedirection();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(setupAction =>
+            {
+                setupAction.SwaggerEndpoint("/swagger/RestaurantOpenAPISpecification/swagger.json",
+                                            "RestaurantAPI");
+                setupAction.RoutePrefix = "";
+            });
             app.UseRouting();
 
             app.UseAuthorization();
